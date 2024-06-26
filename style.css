@@ -1,13 +1,13 @@
-/* Reset default styles */
+
 body {
   margin: 0;
   padding: 0;
 }
 
-/* Custom header */
+
 .custom-header {
-  background-color: #007bff; /* Bootstrap primary color */
-  color: #ffffff; /* White text */
+  background-color: #007bff; 
+  color: #ffffff; 
   padding: 8px 0;
   font-size: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -89,9 +89,9 @@ body {
   }
 }
 
-/* Light blue background section */
+
 .light-blue-background {
-  background-image: url(images/pexels-alxs-919734.jpg);
+  background-image: url(images/rm373batch9-031.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -116,7 +116,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-start;
 }
 
 .navbar li {
@@ -148,13 +147,13 @@ body {
   color: #ffffff;
 }
 
-/* Increase size of navbar text and icons */
+
 .navbar a,
 .header-icons a {
   font-size: 17px;
 }
 
-/* Adjust size of Font Awesome icons */
+
 .header-icons a i {
   font-size: 1.5rem;
 }
@@ -174,10 +173,10 @@ body {
 
 .search-box {
   text-align: center;
-  padding: 10px 20px; /* Adjusted padding */
-  display: flex; /* Flexbox for alignment */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  padding: 10px 20px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .search-box form {
@@ -238,7 +237,7 @@ body {
 
   .search-box {
     flex-direction: column;
-    padding: 10px 0; /* Adjusted padding */
+    padding: 10px 0;
   }
 
   .search-box input[type="search"],
@@ -282,7 +281,7 @@ body {
   margin-top: 10px;
 }
 
-/* Categories section */
+
 .categories {
   display: flex;
   flex-wrap: wrap;
@@ -294,11 +293,17 @@ body {
   text-align: center;
   width: 15%;
   margin: 10px 0;
+  transition: transform 0.3s ease-in-out;
 }
 
 .category img {
   max-width: 100%;
   height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category img:hover,.category:hover {
+  transform: translateY(-10px); 
 }
 
 .category p {
@@ -306,15 +311,281 @@ body {
   margin-top: 10px;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .step, .category {
-    width: 45%;
+
+.recommended-courses {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.recommended-courses h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.course-card {
+  width: calc(25% - 20px);
+  text-align: left;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover {
+  transform: translateY(-5px); 
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.course-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+.course-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.course-details span {
+  font-size: 1rem;
+  color: #555;
+}
+
+.course-details i {
+  margin-right: 5px;
+}
+
+.course-details s {
+  color: #999;
+}
+
+@media (max-width: 1200px) {
+  .course-card {
+    width: calc(33.33% - 20px);
   }
 }
 
-@media (max-width: 480px) {
-  .step, .category {
-    width: 100%;
+@media (max-width: 992px) {
+  .course-card {
+    width: calc(50% - 20px);
   }
+}
+
+@media (max-width: 768px) {
+  .course-card {
+    width: calc(100% - 20px);
+  }
+}
+
+
+
+.internship-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.internship-section h1 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.internship-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.internship-card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgb(113, 113, 113);
+  box-shadow: 0 4px 8px rgba(42, 239, 7, 0.1);
+  overflow: hidden;
+  width: 300px;
+}
+
+.internship-card-header {
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.internship-card-header h2 {
+  margin: 0;
+}
+
+.html-css-js {
+  background-color: #4a90e2;
+}
+
+.graphic-designing {
+  background-color: #4a90e2;
+}
+
+.digital-marketing {
+  background-color: #4a90e2;
+}
+
+.internship-card-body {
+  padding: 20px;
+  text-align: left;
+}
+
+.internship-card-body p {
+  margin: 20px 0;
+}
+
+.internship-card-body p span {
+  font-weight: bold;
+}
+
+button {
+  background-color: #4a90e2;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+.container-big-pic {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockup-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-container h1 {
+  font-size: 3em;
+  margin: 0 0 20px;
+}
+
+.text-container .highlight {
+  color: #007bff;
+}
+
+.text-container p {
+  font-size: 2em;
+  color: #555;
+}
+
+.app-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.app-links img {
+  max-width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+
+.investment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.header {
+  background-color: #042D89;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.header .highlight {
+  color: #4a90e2;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #042D89;
+}
+.section {
+  width: 20%;
+}
+.section h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.section p, .section a {
+  font-size: 1em;
+  line-height: 1.6;
+  color: white;
+  text-decoration: none;
+}
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+.section ul li {
+  margin-bottom: 10px;
 }
